@@ -60,7 +60,7 @@ class ClipboardAdmin(admin.ModelAdmin):
         url_patterns.extend(urls)
         return url_patterns
 
-    def get_model_perms(self, request):
+    def get_model_perms(self, *args, **kwargs):
         """
         It seems this is only used for the list view. NICE :-)
         """
